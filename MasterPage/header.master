@@ -1,0 +1,555 @@
+﻿<%@ Master Language="VB" CodeFile="header.master.vb" Inherits="header" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        .div-Background 
+{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+       
+}
+.lstbx
+{
+    border-left-style:none;
+    border-right-style:none;
+    border-bottom-style:none;
+    border-top-style:none;
+}
+.panel-1
+{
+    text-align:center;
+    }
+.div-Progress 
+{
+    position:fixed;
+    top:60%;
+    left:40%;
+    width:300;
+    height:50px;
+    text-align:center;
+    background-color:transparent;
+   }
+        .panel1
+        {
+        padding-top:100px auto;
+        z-index:45;
+        }
+        .auto-style4 {
+            height: 22px;
+        }
+
+        .auto-style6 {
+            height: 23px;
+            width: 668px;
+        }
+
+        .auto-style7 {
+            height: 62px;
+        }
+
+        .auto-style8 {
+            height: 23px;
+            width: 276px;
+        }
+
+        .auto-style15 {
+            width: 424px;
+            height: 55px;
+        }
+
+        .auto-style16 {
+            height: 55px;
+            width: 276px;
+        }
+
+        .auto-style17 {
+            height: 55px;
+            width: 668px;
+        }
+
+        .bg {
+            background-image: url(../Images/main_bg.jpg);
+            background-size: 100%;
+            
+        }
+        .bg-div1 {
+            background-color: rgb(224,224,224);
+            margin:10px auto;
+            margin-top:50px; 
+        }
+
+.bg-div4
+        {
+           margin:10px auto; 
+        }
+        .bg-div2 {
+            background-color: rgb(255, 255, 255);
+            margin:0px auto; 
+        }
+        .bg-div3 {
+            background-color: #27317F;
+            margin:0px auto;
+        }
+        .button {
+            background-color: transparent;
+            border: none;
+            color: black;
+            cursor: pointer;
+            font-size: x-large;
+            font-family: 'Arial Unicode MS';
+        }
+
+            .button:hover {
+                background-color: #131A6C;
+                border: none;
+                color: Gray;
+                cursor: pointer;
+                font-size: x-large;
+                font-family: 'Arial Unicode MS';
+            }
+
+        .button1 {
+            background-color: transparent;
+            border: none;
+            color: #131A6C;
+            cursor: pointer;
+            font-size: medium;
+            font-family: 'Arial Unicode MS';
+        }
+
+            .button1:hover {
+                background-color: transparent;
+                border: none;
+                color: Red;
+                cursor: pointer;
+                font-size: medium;
+                font-family: 'Arial Unicode MS';
+            }
+            .button2 {
+            background-color: transparent;
+            border: none;
+            color: black;
+            cursor: pointer;
+            font-size: medium;
+            font-family: 'Arial Unicode MS';
+        }
+
+            .button2:hover {
+                background-color: transparent;
+                border: none;
+                color: Gray;
+                cursor: pointer;
+                font-size: medium;
+                font-family: 'Arial Unicode MS';
+            }
+       .button3 {
+            background-color: #131A6C;
+            border: none;
+            color: White;
+            cursor: pointer;
+            font-size: large;
+            font-family: 'Arial Unicode MS';
+                    }
+
+            .button3:hover {
+                background-color: #CCCC00;
+                border: none;
+                color: Black;
+                cursor: pointer;
+                font-size: large;
+                font-family: 'Arial Unicode MS';
+            }
+      
+        .auto-style18 {
+            height: 13px;
+        }
+        
+        .table-background
+        {
+            background-color: rgb(255, 255, 240);
+        }
+        .style1
+        {
+            height: 11px;
+            width: 500px;
+        }
+        .style3
+        {
+            height: 23px;
+        }
+        .style16
+        {
+            background-color: #27317F;
+            margin: 0px auto;
+            height: 318px;
+            width: 1024px;
+        }
+        .style160
+        {
+            width: 164px;
+            height: 87px;
+        }
+      
+        .style161
+        {
+            width: 30px;
+        }
+        </style>
+</head>
+<body class="bg">
+
+    <form id="form1" runat="server">
+    <div style="height: 80px; width: 1024px;" class="bg-div4">
+        <table style="width: 100%;">
+            <tr>
+                <td class="style161">
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="style161">
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                <img alt="" src="../Images/logo.jpg" class="style160" /></td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="style161">
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        &nbsp;</div>
+
+        <div style="height: 80px; text-align: center; width: 1024px;" class="bg-div1">
+
+            <table style="width: 1024px">
+                <tr>
+                    <td colspan="2" class="auto-style4" style="background-color:#FFBA00;">
+                        <asp:Button ID="HomeButton" runat="server" Text="Home" CssClass="button" 
+                            CausesValidation="False" />
+                        <asp:Button ID="MoviesButton" runat="server" Text="Movies" CssClass="button" 
+                            CausesValidation="False" />
+                        <asp:Button ID="TicketsButton" runat="server" Text="Tickets" CssClass="button" 
+                            CausesValidation="False" />
+                        <asp:Button ID="CinemaButton" runat="server" Text="Cinemas" CssClass="button" 
+                            CausesValidation="False" />
+                        <asp:Button ID="ContactButton" runat="server" Text="Connect With Us" 
+                            CssClass="button" Width="200px" CausesValidation="False" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style1"></td>
+                    <td class="style3">
+                        <asp:Label ID="usrnameLabel" runat="server" Font-Names="Arial" 
+                            Font-Overline="False" Font-Size="Medium"></asp:Label>
+                        <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+                            <asp:Button ID="SignInButton" runat="server" Text="Sign in" CssClass="button1" CausesValidation="False" />
+                            <asp:Button ID="SignOutButton" runat="server" Text="Sign Out" CssClass="button1" CausesValidation="False" />
+                            <asp:Button ID="RegisterButton" runat="server" Text="Register" CssClass="button1" CausesValidation="False" />
+                            <asp:Button ID="AccountButton" runat="server" Text="My Account" CssClass="button1" CausesValidation="False" />
+                        </asp:PlaceHolder>
+                    </td>
+                </tr>
+                                
+            </table>
+
+
+           </div>
+    <div style="height: 500px; width: 1024px; overflow:auto;" class="bg-div2">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="style16">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <div 
+            class="style166">
+        <table class="style150">
+            <tr>
+                <td class="style139" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style126" colspan="6" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style151" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style126" colspan="6" 
+                    style="color: #FFFFFF; font-weight: bold; background-color: #05092C;">
+                    &nbsp;&nbsp; Follow Us On&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image19" runat="server" ImageUrl="~/Images/facebook_icon.jpg" />
+&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image20" runat="server" ImageUrl="~/Images/twitter_icon.jpg" />
+                    &nbsp;</td>
+                <td class="style151" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style126" colspan="6" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style151" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style138" style="color: #FFFFFF; font-weight: bold">
+                    </td>
+                <td class="style153" style="color: #FFFFFF; font-weight: bold">
+                    General</td>
+                <td class="style154" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;
+                    Tickets</td>
+                <td class="style154" style="color: #FFFFFF; font-weight: bold">
+                    &nbsp;
+                    Movies</td>
+                <td class="style154" style="color: #FFFFFF; font-weight: bold">
+                    Cinemas</td>
+                <td class="style154" style="color: #FFFFFF; font-weight: bold">
+                    Events &amp; Promos</td>
+                <td style="color: #FFFFFF; font-weight: bold" class="style154">
+                    Corporate</td>
+                <td style="color: #FFFFFF; font-weight: bold" class="style152">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton7" runat="server" ForeColor="#8386A4" Font-Underline="False">Home</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton8" runat="server" ForeColor="#8386A4" Font-Underline="False">Purchaces</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton9" runat="server" ForeColor="#8386A4" Font-Underline="False">All Movies</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton10" runat="server" ForeColor="#8386A4" Font-Underline="False">Cinema Locator</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton11" runat="server" ForeColor="#8386A4" Font-Underline="False">Movie Events</asp:LinkButton>
+                </td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    <asp:LinkButton ID="LinkButton12" runat="server" ForeColor="#8386A4" 
+                        Font-Underline="False">About Us</asp:LinkButton>
+                </td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton13" runat="server" ForeColor="#8386A4" Font-Underline="False">Connect with Us</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton14" runat="server" ForeColor="#8386A4" Font-Underline="False">Movie News</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton15" runat="server" ForeColor="#8386A4" Font-Underline="False">FAQ&#39;s</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    <asp:LinkButton ID="LinkButton19" runat="server" ForeColor="#8386A4" Font-Underline="False">Site Map</asp:LinkButton>
+                </td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td 
+                    style="color: #6C507F; font-size: medium; font-weight: bold" colspan="6">
+                    Disclaimer: Photos &amp; certain artwork used on OMTB.com are copyright protected 
+                    and are the property of their respective owners. Brand logos &amp; other trademarks 
+                    used herein are the property of ther respective owners. © 2013 OMTB Ltd</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style139" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style155" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td class="style156" 
+                    style="color: #6C507F; font-size: medium; font-weight: bold">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style156">
+                    &nbsp;</td>
+                <td style="color: #6C507F; font-size: medium; font-weight: bold" 
+                    class="style151">
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+</body>
+</html>

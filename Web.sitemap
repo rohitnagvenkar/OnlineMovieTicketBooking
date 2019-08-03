@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Home/home.aspx" title="Home"  description="">
+        <siteMapNode url="~/Account/myaccount.aspx" title="My Account"  description="" />
+        <siteMapNode url="~/Contact/contact.aspx" title="Contact"  description="" />
+        <siteMapNode url="~/General/privacy.aspx" title="privacy"  description="" />
+        <siteMapNode url="~/General/terms-of-use.aspx" title="terms-of-use"  description="" />
+        <siteMapNode url="~/General/termsandconditions.aspx" title="termsandconditions"  description="" />
+        <siteMapNode url="~/General/sitemap.aspx" title="sitemap"  description="" />
+        <siteMapNode url="~/Account/myaccountedit.aspx" title="My Account Edit"  description="" />
+        <siteMapNode url="~/Account/accountviewprofile.aspx" title="My Account View Profile"  description="" />
+        <siteMapNode url="~/Account/accountticketinfo.aspx" title="My Account Booking History"  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+    </siteMapNode>
+</siteMap>
